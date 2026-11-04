@@ -1,0 +1,77 @@
+.banner {
+    width: 100%;
+    height: 500px;
+    /* background-color: skyblue; */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.bestoutfit {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.651), rgb(0, 0, 0, 0.651)), url("assets/banner.jpg");
+}
+
+.men {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.651), rgb(0, 0, 0, 0.651)), url("assets/men.jpg");
+}
+
+.women {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.651), rgb(0, 0, 0, 0.651)), url("assets/women.jpg");
+}
+
+.banner h2 {
+    font-weight: 900;
+}
+
+.banner p {
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+
+@media(max-width:600px) {
+
+    .banner p {
+        letter-spacing: 0;
+    }
+}
+
+.card img {
+    height: 200px;
+    object-fit: contain
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+
+}
+
+.category-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain
+}
+@media (max-width: 991px) {
+    .category-grid {
+        grid-template-columns: repeat(0, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.col {
+    transition: all .2s ease-in-out; 
+}
+
+.col:hover {
+    transform: scale(1.1);
+}
